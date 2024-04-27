@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flicks Login</title>
+  <link rel="icon" href="./image/Flicks-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <style>
+    .social-proof {
+      width: 100%;
+      max-width: 350px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+      font-style: italic;
+      color: #777;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-proof img {
+      width: 100%;
+      height: auto;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      animation: background-swap 30s infinite;
+      background-clip: text;
+      background-image: url("./image/blank.jpg");
+      background-position: center;
+    }
+
+    .container {
+  width: 350px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff; /* Changed from #ddd for a cleaner look */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Updated box-shadow for subtle depth */
+  text-align: center;
+}
+    @keyframes background-swap {
+  0%, 100% {
+    background-image: url("./image/img1.jpg");
+    background-size: cover;
+  }
+  16.67% {
+    background-image: url("./image/img2.jpg");
+    background-size: cover;
+  }
+  33.33% {
+    background-image: url("./image/img3.jpg");
+    background-size: cover;
+  }
+  50% {
+    background-image: url("./image/img4.jpg");
+    background-size: cover;
+  }
+  66.67% {
+    background-image: url("./image/img5.jpg");
+    background-size: cover;
+  }
+  83.33% {
+    background-image: url("./image/img6.jpg");
+    background-size: cover;
+  }
+}
+
+   h1 {
+      font-size: 40px; /* Maintain font size */
+      color: #333; /* Darker color for better contrast */
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Darker color for labels */
+  font-weight: bold; /* Add some emphasis */
+} 
+button[type="submit"] {
+  background-color: #333; /* Darker background for the button */
+  color: #fff; /* White text for better contrast */
+  border: none;
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #222; /* Darker shade on hover */
+}
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%; /* Maintain full width */
+      padding: 15px; /* Adjust padding if needed */
+      border-radius: 5px;
+      border: 1px solid #ccc; /* Lighter border color */
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      font-family: 'Shoelace', sans-serif;
+      background-color: #f5f5f5; /* Light gray background */
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #333; /* Change border color on focus */
+      outline: none; /* Remove default outline */
+    }
+
+    button[type="submit"] {
+      background-color: #fff;
+      color: #333;
+      border: none;
+      margin-top: 10px;
+      padding: 15px 25px;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    button[type="submit"]::after {
+      /* content: "\f107"; Font Awesome icon for lock */
+      font-family: sans-serif;
+      font-weight: normal;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    #message {
+      color: red;
+      margin-top: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      z-index: 2;
+    }
+    p {
+  font-size: 16px; /* Adjust font size for paragraphs */
+  color: #666; /* Lighter color for better readability */
+  margin-bottom: 15px; /* Adjust margin as needed */
+}
+    a{
+      color: #000;
+      text-decoration: none;
+      margin-top: 10px;
+      display: block;
+    }
+  </style>
+
+  <div class="container">
+    <h1>Flicks: Lace Up and Login!</h1>
+    <p>Welcome to the exclusive world of Flicks sneakers.</p>
+    <form id="login-form" action="/register" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Log In</button>
+      <p>Don't have an account? <a href="/register">Sign Up</a></p>
+    </form>
+  </div>  
+
+  <div class="social-proof">
+    <p>"Flicks sneakers are the perfect blend of style and comfort. I can't imagine wearing anything else!" - John S., Satisfied Customer</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flicks Sneaker Brand</title>
+  <link rel="icon" href="./image/Flicks-icon.png">
+</head>
+<body>
+  <style>
+    section nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 0 8px rgba(0,0,0,0.6);
+      background: white;
+      position: sticky; /* Changed to sticky */
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 0 20px;
+      height: 60px;
+    }
+
+    section nav .logo img {
+      max-height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    section nav .logo {
+      font-size: 20px;
+      color: #c72092;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+
+    section nav .logo span {
+      color: #6c14d0;
+      text-decoration: none;
+    }
+
+    section nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    section nav .logo h1 {
+      font-size: 20px;
+      margin: 0;
+      display: inline;
+    }
+
+    section nav ul li {
+      display: inline-block;
+      margin: 5px 15px;
+    }
+
+    section nav ul li a {
+      text-decoration: none;
+      color: black;
+      transition: transform 0.3s ease; /* Added transition */
+      display: inline-block; /* Added display property */
+    }
+
+    section nav ul li a:hover {
+      color: #c7204d;
+      transform: scale(1.2); /* Scale on hover */
+    }
+
+    .login-button {
+      margin-right: 10px;
+    }
+
+    .login-button a {
+      text-decoration: none;
+      color: black;
+      padding: 8px 15px;
+      border: 1px solid #c72092;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .login-button a:hover {
+      background-color:#c7204d;
+      color: white;
+    }
+
+    .content {
+      padding-top: 80px; /* Adjusted to accommodate the fixed navigation bar */
+    }
+
+    .video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background-color: #f2f2f2; /* Example background color */
+}
+
+.video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+  </style>
+  <section>
+    <nav>
+      <div class="logo">
+        <a href="/index2"><img class="img-responsive2" src="image/Flicks-icon.png" alt="Flicks-icon"></a>
+        <a href="/index2"><h1><span style="color: #6c14d0;">Flick</span><span style="color: #c72092;">s</span></h1></a>
+      </div>
+
+      <ul>
+        <li><a href="/Homepage">Home</a></li>
+        <li><a href="/Homepage#Products">Products</a></li>
+        <li><a href="/Homepage#About">About</a></li>
+        <li><a href="/Homepage#Review">Review</a></li>
+        <li><a href="/Homepage#Services">Services</a></li>
+      </ul>
+
+      <div class="login-button">
+        <a href="/Login">Login</a>
+      </div>
+    </nav>
+  </section>
+
+  <div class="content">
+    <div class="video">
+      <video autoplay muted loop id="video-background" playsinline>
+        <source src="FlicksIntro.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </div>
+</body>
+</html>
